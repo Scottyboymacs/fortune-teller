@@ -11,15 +11,15 @@ class NumbersController < ApplicationController
     render({ :template => "lottery_stuff/woohoo.html.erb"})
   end 
 
-  def winners
-    @zebra = Array.new
+  def losers
+    @monkey = Array.new
 
     5.times do
-      giraffe = rand(1...100)
+      gorilla = rand(1...100)
       
-      @zebra.push(giraffe)
+      @monkey.push(gorilla)
     end
 
-    render({ :template => "lottery_stuff/woohoo.html.erb"})
+    render({ :template => "lottery_stuff/rats.html.erb"})
   end 
 end
